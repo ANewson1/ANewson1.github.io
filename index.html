@@ -258,7 +258,7 @@
 										<h2 class="title">Our Services</h2>
 									</div> <!-- /.theme-title-one -->
 									<p>Terrapin Solutions Ltd offers font Licensing for Doc Comp, Mainframe, CCM and CRM systems. It also provides other services such as logo and icon fonts for billing applications, legacy format forms and graphics, OGL, FRM, LGO, IMG, PSEG. </p>
-									<a href="services.html" class="theme-button-one">View All Services</a>
+									<button class="theme-button-one" onclick="relocate_services()">View All Services</button>
 								</div> <!-- /.left-side -->
 
 								<div class="right-side">
@@ -447,8 +447,6 @@
 			</footer> <!-- /.theme-footer -->
 
 
-
-
 	        <!-- Scroll Top Button -->
 			<button class="scroll-top tran3s">
 				<i class="fa fa-angle-up" aria-hidden="true"></i>
@@ -485,6 +483,15 @@
 
 		<!-- Theme js -->
 		<script src="js/theme.js"></script>
+
+		<!-- Relocate script -->
+		<script>
+		function relocate_services()
+		{
+		 location.href = "services.html";
+		}
+		
+		</script>
 		</div> <!-- /.main-page-wrapper -->
 	</body>
 </html>
