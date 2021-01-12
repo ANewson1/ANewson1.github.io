@@ -1,6 +1,6 @@
 <?php
 
-    $to = "someone@yahoo.com";
+    $to = "a-newson1@hotmail.co.uk";
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
     $headers = "From: $from";
@@ -12,7 +12,7 @@
     $fields{"phone"}    = "Phone";
     $fields{"sub"}    = "Subject";
     $fields{"message"}   = "Message";
-    
+
 
     $body = "Here is the message you got:\n\n"; foreach($fields as $a => $b){   $body .= sprintf("%20s: %s\n",$b,$_REQUEST[$a]); }
 

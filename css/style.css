@@ -2106,7 +2106,7 @@ body .theme-button-one:hover {background:#67338f; }
 /*----------------------- Lightbox gallery -----------------*/
 
 .lightbox-gallery {
-    background: url(../images/home/slider3.jpg);
+    background: url(../images/home/slider3Edit.jpg);
     background-repeat:no-repeat;
     color: #000;
     overflow-x: hidden;
@@ -2171,4 +2171,32 @@ body .theme-button-one:hover {background:#67338f; }
 
 a:hover {
   color: #67338f !important;
+}
+
+@media (min-width:767px) {
+#customersMobile {
+  display: none;
+  }
+
+  #serviceImageMobile {
+    display: none;
+  }
+
+}
+
+@media (max-width:767px) {
+
+#customersDesktop {
+  display: none;
+  }
+
+  #serviceImageDesktop {
+    display: none;
+  }
+
+  #serviceImageMobile {
+        margin-bottom: 25px;
+    }
+
+
 }
