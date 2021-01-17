@@ -364,26 +364,35 @@
 					<div class="theme-title-one text-center">
 						<h2 class="title">Request a Call Back</h2>
 					</div> <!-- /.theme-title-one -->
-					<form action="#">
+					<form action="inc/sendemail.php" class="theme-form-one form-validation" autocomplete="off">
 						<div class="row">
-							<div class="col-lg-4 col-md-6 col-12"><input type="text" placeholder="Name"></div>
-							<div class="col-lg-4 col-md-6 col-12"><input type="email" placeholder="Email"></div>
-							<div class="col-lg-4 col-12"><input type="text" placeholder="Phone"></div>
-							<div class="col-lg-4 col-12">
-								<select class="form-control" id="exampleSelect1">
-								    <option>I would like to discuss</option>
-								    <option>Font licensing</option>
-								    <option>Foreign language fonts</option>
-								    <option>Legacy forms and graphics</option>
-								    <option>Complex CJK language fonts</option>
-										<option>Elixir DPT</option>
-								</select>
-								<input type="text" placeholder="Any Other Topic ">
-							</div>
-							<div class="col-lg-8 col-12"><textarea placeholder="Your Words"></textarea></div>
+							<div class="col-lg-4 col-sm-6 col-12"><input type="text" placeholder="Name" name="name"></div>
+							<div class="col-lg-4 col-sm-6 col-12"><input type="email" placeholder="Email" name="email"></div>
+							<div class="col-lg-4 col-sm-6 col-12"><input type="text" placeholder="Phone" name="phone"></div>
+							<div class="col-lg-12 col-sm-6 col-12"><input type="text" placeholder="Subject" name="sub"></div>
+							<div class="col-12"><textarea placeholder="Enter Your Word..." name="message"></textarea></div>
+							<div class="col-12"><button class="theme-button-one">Send</button></div>
 						</div>
-						<button class="theme-button-one">Submit</button>
 					</form>
+				</div> <!-- /.container -->
+				<!--Contact Form Validation Markup -->
+				<!-- Contact alert -->
+				<div class="alert-wrapper" id="alert-success">
+					<div id="success">
+						<button class="closeAlert"><i class="fa fa-times" aria-hidden="true"></i></button>
+						<div class="wrapper">
+											<p>Your message was sent successfully.</p>
+									 </div>
+							</div>
+					</div> <!-- End of .alert_wrapper -->
+					<div class="alert-wrapper" id="alert-error">
+							<div id="error">
+									<button class="closeAlert"><i class="fa fa-times" aria-hidden="true"></i></button>
+									<div class="wrapper">
+											<p>Sorry!Something Went Wrong.</p>
+									</div>
+							</div>
+					</div> <!-- End of .alert_wrapper -->
 				</div> <!-- /.container -->
 			</div> <!-- /.call-back-form-one -->
 

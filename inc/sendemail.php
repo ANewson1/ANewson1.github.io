@@ -4,7 +4,7 @@
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
     $headers = "From: $from";
-    $subject = "You have a message from your Template";
+    $subject = "You have a message from the Terrapin website.";
 
     $fields = array();
     $fields{"name"}    = "Name";
